@@ -1,33 +1,36 @@
 
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Space Mono', monospace !important;
   font-weight: 700 !important;
 }
 
 h1 {
-  padding: .3em;
+  padding: 0.3em;
 }
 
-header, .btn-info{
+header,
+.btn-info {
   background-color: black !important;
 }
 
-body{
+body {
   font-family: 'Work Sans', sans-serif !important;
 }
 
-
 .list-header {
-  background-color:black;
+  background-color: black;
 }
 
 a > i {
-  color: #512DA8;
+  color: #512da8;
   font-size: 25px;
   padding-right: 15px;
 }
 
-logo.logo {
+.logo {
   color: red !important;
 }
 
@@ -35,11 +38,11 @@ a:hover {
   text-decoration: none !important;
 }
 
-.delete-btn:hover{
-  color: red; 
+.delete-btn:hover {
+  color: red;
 }
 
-.plus-btn{
+.plus-btn {
   line-height: 40px;
   font-size: 25px;
 }
@@ -49,38 +52,33 @@ a:hover {
   margin-right: 10px;
 }
 
-.item-title:focus, textarea:focus {
+textarea {
+  background-color: rgba(206, 206, 198, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.item-title:focus,
+textarea:focus {
   outline: none;
 }
 
-input::placeholder, 
+input::placeholder,
 textarea::placeholder,
-input[type = 'date'],
-select, 
-option,label {
+input[type='date'],
+select,
+option,
+label {
   color: lightslategray !important;
   font-size: smaller !important;
 }
 
-.sh{
-  // background: linear-gradient(to right, #cc2b5e, #753a88);
-  background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+.sh {
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 }
 
-.vh-100{
-  background: #2980B9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-textarea{
-  background-color: rgba(206, 206, 198, 0.3);
-  border-radius: 10px;
-  padding: 10px;
+.vh-100 {
+  background: linear-gradient(to right, #fff, #6dd5fa, #2980b9);
 }
 
 .project-name {
@@ -90,6 +88,7 @@ textarea{
   outline: none;
 }
 
-form:hover, input:hover {
+form:hover,
+input:hover {
   cursor: pointer;
 }
