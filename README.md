@@ -1,6 +1,6 @@
 # To-Do List
 
-> This is a JS To-Do list app where users can add projects and there corresponding task lists they like to work on.
+> This is a JavaScript To-Do list app where users can add projects and there corresponding task lists they like to work on.
 
 ![screenshot]()
 
@@ -19,7 +19,7 @@
 To get a local copy up and running follow these simple example steps.
 
 To get a local copy up and running follow these simple example steps.
-- `git clone git@github.com:trekab/js-todo-app.git`
+- `git clone git@github.com:ignatius22/Todo-app-js.git`
 
 Then you browse to the folder and exucute the following commands
 - `cd js-todo-app`
