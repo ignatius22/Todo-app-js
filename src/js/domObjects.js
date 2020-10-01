@@ -276,5 +276,26 @@ const ProjectList = (list) => {
   return listNode;
 };
 
+const TodoList = (list) => {
+  const listNode = document.createElement('div');
+  const header = listHeader(list.name);
+  const actualList = listBody(list, 'todo');
+
+  listNode.appendChild(header.container);
+  listNode.appendChild(actualList);
+
+  header.addButton.addEventListener('click', () => {
+    const li = TodoListItem(list);
+    if (!actualList.querySelector('li[data-new=true]')) {
+      actualList.insertBefore(li.li, actualList.firstChild);
+      li.li.dataset.new = true;
+      li.startEdit();
+    }
+  });
+
+  return listNode;
+};
+
+
 
 export default { TodoListItem, TodoList, ProjectList };
