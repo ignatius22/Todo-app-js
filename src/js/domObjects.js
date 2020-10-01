@@ -296,6 +296,24 @@ const TodoList = (list) => {
   return listNode;
 };
 
+const listHeader = (caption) => {
+  const container = document.createElement('div');
+  container.classList = ' list-header d-flex justify-content-between align-items-center p-1 rounded-pill';
+  const title = document.createElement('h3');
+  title.classList = 'text-center w-100 m-0';
+  title.innerHTML = caption;
+  const addButton = document.createElement('a');
+  addButton.classList = 'p-2 d-block';
+  addButton.href = '#';
+  const icon = document.createElement('i');
+  icon.classList = 'plus-btn fas fa-plus-circle';
+
+  addButton.appendChild(icon);
+  container.appendChild(title);
+  container.appendChild(addButton);
+
+  return { container, title, addButton };
+};
 
 
 export default { TodoListItem, TodoList, ProjectList };
