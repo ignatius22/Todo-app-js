@@ -201,6 +201,47 @@ const TodoListItem = (list) => {
   };
 };
 
+const ProjectListItem = (list) => {
+  const btn = document.createElement('button');
+  const btnForm = document.createElement('form');
+  const submit = document.createElement('button');
+  submit.type = 'submit';
+  const btnName = document.createElement('input');
+  btn.classList = 'btn btn-info rounded-pill text-white p-1 m-1';
+  btnName.classList = 'project-name w-100 font-weight-bold text-white';
+  submit.classList = 'd-none';
+  btn.appendChild(btnForm);
+  btnForm.appendChild(btnName);
+  btnForm.appendChild(submit);
+
+  const startEdit = () => {
+    setTimeout(() => {
+      btnName.focus();
+    }, 100);
+  };
+
+  btnForm.addEventListener('submit', () => {
+    const newProject = { ...todoItems.List };
+    newProject.name = btnName.value;
+    newProject.items = [];
+    list.items.push(newProject);
+
+    const mainSection = document.getElementById('main-section');
+    setTimeout(() => {
+      const todo = TodoList(newProject);
+      mainSection.innerHTML = '';
+      mainSection.append(todo);
+    }, 100);
+
+
+    localStorage.setItem('projectlist', JSON.stringify(list));
+  });
+
+  return {
+    startEdit, btn, name: btnName, form: btnForm,
+  };
+};
+
 
 
 export default { TodoListItem, TodoList, ProjectList };
