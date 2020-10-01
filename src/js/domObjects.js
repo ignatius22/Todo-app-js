@@ -242,6 +242,39 @@ const ProjectListItem = (list) => {
   };
 };
 
+const ProjectList = (list) => {
+  const listNode = document.createElement('div');
+  const header = listHeader('Projects');
+  const actualList = listBody(list, 'project');
+
+  listNode.appendChild(header.container);
+  listNode.appendChild(actualList);
+
+  header.addButton.addEventListener('click', () => {
+    const newProject = ProjectListItem(list);
+    if (!actualList.querySelector('button[data-new=true]')) {
+      actualList.insertBefore(newProject.btn, actualList.firstChild);
+      newProject.btn.dataset.new = true;
+      newProject.startEdit();
+    }
+  });
+
+  actualList.addEventListener('click', (e) => {
+    const mainSection = document.getElementById('main-section');
+    const listName = e.target.dataset.name;
+    list.items.forEach((item) => {
+      if (listName === item.name) {
+        setTimeout(() => {
+          const todo = TodoList(item);
+          mainSection.innerHTML = '';
+          mainSection.append(todo);
+        }, 100);
+      }
+    });
+  });
+
+  return listNode;
+};
 
 
 export default { TodoListItem, TodoList, ProjectList };
