@@ -331,6 +331,43 @@ const listBody = (itemList, type = null) => {
   return itemUL;
 };
 
+const generateId = (list) => {
+  const ids = list.map((i) => i.id);
+  if (ids.length === 0) {
+    return 0;
+  }
+  return Math.max(...ids) + 1;
+};
 
+const renderList = (ul, itemList, type = 'todo') => {
+  itemList.items.forEach(i => {
+    if (type === 'project') {
+      const newItem = ProjectListItem(itemList);
+      newItem.name.value = i.name;
+      newItem.name.readOnly = 'true';
+      newItem.btn.dataset.name = i.name;
+      newItem.name.dataset.name = i.name;
+      newItem.form.dataset.name = i.name;
+      ul.appendChild(newItem.btn);
+
+      newItem.name.addEventListener('dblclick', () => {
+        newItem.name.removeAttribute('readonly');
+      });
+    } else {
+      const newItem = TodoListItem(itemList);
+      newItem.li.dataset.id = i.id;
+      newItem.title.value = i.title;
+      newItem.title.readOnly = true;
+      newItem.desc.value = i.description;
+      newItem.due.value = i.due;
+      newItem.priority.value = i.priority;
+      ul.appendChild(newItem.li);
+
+      newItem.title.addEventListener('dblclick', () => {
+        newItem.title.removeAttribute('readonly');
+      });
+    }
+  });
+};
 
 export default { TodoListItem, TodoList, ProjectList };
