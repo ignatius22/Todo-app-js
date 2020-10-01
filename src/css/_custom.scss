@@ -9,7 +9,7 @@ h1 {
 }
 
 header, .btn-info{
-  background-color: #512DA8 !important;
+  background-color: black !important;
 }
 
 body{
@@ -17,7 +17,7 @@ body{
 }
 
 .list-header {
-  background-color:#D1C4E9;
+  background-color:black;
 }
 
 a > i {
@@ -59,6 +59,10 @@ select,
 option,label {
   color: lightslategray !important;
   font-size: smaller !important;
+}
+
+.sh{
+  background: linear-gradient(to right, #cc2b5e, #753a88);
 }
 
 textarea{

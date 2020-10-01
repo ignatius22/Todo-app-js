@@ -298,7 +298,7 @@ const TodoList = (list) => {
 
 const listHeader = (caption) => {
   const container = document.createElement('div');
-  container.classList = ' list-header d-flex justify-content-between align-items-center p-1 rounded-pill';
+  container.classList = ' list-header d-flex justify-content-between align-items-center p-1 card shadow';
   const title = document.createElement('h3');
   title.classList = 'text-center w-100 m-0';
   title.innerHTML = caption;
