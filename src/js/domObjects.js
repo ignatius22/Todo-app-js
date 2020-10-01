@@ -315,5 +315,22 @@ const listHeader = (caption) => {
   return { container, title, addButton };
 };
 
+const listBody = (itemList, type = null) => {
+  const itemUL = document.createElement('ul');
+  itemUL.classList = 'list-group list-group-flush';
+
+  renderList(itemUL, itemList, type);
+
+  itemUL.addEventListener('submit', () => {
+    setTimeout(() => {
+      itemUL.innerHTML = '';
+      renderList(itemUL, itemList, type);
+    }, 300);
+  });
+
+  return itemUL;
+};
+
+
 
 export default { TodoListItem, TodoList, ProjectList };
