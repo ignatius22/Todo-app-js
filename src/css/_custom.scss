@@ -1,0 +1,79 @@
+
+h1,h2,h3,h4{
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 700 !important;
+}
+
+h1 {
+  padding: .3em;
+}
+
+header, .btn-info{
+  background-color: #512DA8 !important;
+}
+
+body{
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+.list-header {
+  background-color:#D1C4E9;
+}
+
+a > i {
+  color: #512DA8;
+  font-size: 25px;
+  padding-right: 15px;
+}
+
+logo.logo {
+  color: red !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.delete-btn:hover{
+  color: red; 
+}
+
+.plus-btn{
+  line-height: 40px;
+  font-size: 25px;
+}
+
+.item-title {
+  border: none;
+  margin-right: 10px;
+}
+
+.item-title:focus, textarea:focus {
+  outline: none;
+}
+
+input::placeholder, 
+textarea::placeholder,
+input[type = 'date'],
+select, 
+option,label {
+  color: lightslategray !important;
+  font-size: smaller !important;
+}
+
+textarea{
+  background-color: rgba(206, 206, 198, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.project-name {
+  background-color: transparent;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+form:hover, input:hover {
+  cursor: pointer;
+}
