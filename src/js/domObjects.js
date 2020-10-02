@@ -237,7 +237,6 @@ const ProjectListItem = (list) => {
 
 
     localStorage.setItem('projectlist', JSON.stringify(list));
-    
   });
 
   return {
@@ -249,12 +248,11 @@ const ProjectList = (list) => {
   const listNode = document.createElement('div');
   const header = listHeader('Projects');
   const actualList = listBody(list, 'project');
-  
+
   listNode.appendChild(header.container);
   listNode.appendChild(actualList);
 
   header.addButton.addEventListener('click', () => {
-
     const newProject = ProjectListItem(list);
     if (!actualList.querySelector('button[data-new=true]')) {
       actualList.insertBefore(newProject.btn, actualList.firstChild);

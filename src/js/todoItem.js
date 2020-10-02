@@ -8,11 +8,12 @@ const Item = {
 };
 
 const List = {
-  name: '',
+  name: 'nice',
   items: [],
-  
+
 };
 
+ const todo = List.items.push("Shopping", "Buy Clothes", "Low", "13-02-2020");
 
 
-export default { Item, List};
+export default { Item, List ,todo};
