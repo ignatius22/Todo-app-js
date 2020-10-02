@@ -13,7 +13,7 @@ const List = {
 
 };
 
- const todo = List.items.push("Shopping", "Buy Clothes", "Low", "13-02-2020");
+const todo = List.items.push('Shopping', 'Buy Clothes', 'Low', '13-02-2020');
 
 
-export default { Item, List ,todo};
+export default { Item, List, todo };

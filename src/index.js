@@ -11,8 +11,6 @@ if (localStorage.getItem('projectlist')) {
 } else {
   projectList = todoItems.List;
   projectList.name = 'project';
- 
-
 }
 localStorage.setItem('projectlist', JSON.stringify(projectList));
 
