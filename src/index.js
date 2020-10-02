@@ -10,7 +10,7 @@ if (localStorage.getItem('projectlist')) {
   projectList = JSON.parse(localStorage.getItem('projectlist'));
 } else {
   projectList = todoItems.List;
-  projectList.name = 'Projects';
+  projectList.name = 'new todo';
 }
 localStorage.setItem('projectlist', JSON.stringify(projectList));
 
