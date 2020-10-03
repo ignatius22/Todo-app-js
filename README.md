@@ -2,7 +2,7 @@
 
 > This is a JavaScript To-Do list app where users can add projects and there corresponding task lists they like to work on.
 
-![screenshot]()
+![screenshot](home.png)
 
 ## Built With
 
@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-[Live Demo Link]( )
+[Live Demo Link](https://todoappv1.netlify.app/ )
 
 
 ## Getting Started
@@ -22,7 +22,7 @@ To get a local copy up and running follow these simple example steps.
 - `git clone git@github.com:ignatius22/Todo-app-js.git`
 
 Then you browse to the folder and exucute the following commands
-- `cd js-todo-app`
+- `cd Todo-app-js`
 - double click on the `index.html` file to open the game in your browser.
 
 ### Instructions:

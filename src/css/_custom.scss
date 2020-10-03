@@ -1,0 +1,94 @@
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 700 !important;
+}
+
+h1 {
+  padding: 0.3em;
+}
+
+header,
+.btn-info {
+  background-color: black !important;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+.list-header {
+  background-color: black;
+}
+
+a > i {
+  color: #512da8;
+  font-size: 25px;
+  padding-right: 15px;
+}
+
+.logo {
+  color: red !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.delete-btn:hover {
+  color: red;
+}
+
+.plus-btn {
+  line-height: 40px;
+  font-size: 25px;
+}
+
+.item-title {
+  border: none;
+  margin-right: 10px;
+}
+
+textarea {
+  background-color: rgba(206, 206, 198, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.item-title:focus,
+textarea:focus {
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder,
+input[type='date'],
+select,
+option,
+label {
+  color: lightslategray !important;
+  font-size: smaller !important;
+}
+
+.sh {
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+
+.vh-100 {
+  background: linear-gradient(to right, #fff, #6dd5fa, #2980b9);
+}
+
+.project-name {
+  background-color: transparent;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+form:hover,
+input:hover {
+  cursor: pointer;
+}
